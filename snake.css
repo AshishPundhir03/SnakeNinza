@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("bg.webp");
+    background-size: 105vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    margin: 10px;
+    background: linear-gradient(rgb(170, 236, 171), rgb(236, 2386, 167));
+    width: 100vmin;
+    height: 50vmax;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18,1fr);
+
+    
+}
+
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 120px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+
+
+}
+
+
+#hiscorebox{
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+
+}
+
+.head{
+    background: linear-gradient(rgb(229, 145, 145), rgb(206, 206, 103));
+    border: 2px solid purple;
+    border-radius: 9px;
+    border: purple;
+
+
+}
+
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 50px;
+}
+
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
